@@ -1,7 +1,11 @@
-import Header from "@/components/Header";
+//import Header from "@/components/Header";
+import HeaderMobile from "@/components/HeaderMobile";
 import "./globals.css";
 import type { Metadata } from "next";
 import { PT_Serif } from "next/font/google";
+import FooterMobile from "@/components/FooterMobile";
+//import FooterMobile from "@/components/FooterMobile";
+// import { useMediaQuery } from "@mui/material";
 
 const ptSerif = PT_Serif({ subsets: ["latin"], weight: ["400"] });
 
@@ -18,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ptSerif.className}>
-        <Header />
+        <HeaderMobile />
         {children}
+        <FooterMobile />
       </body>
     </html>
   );
