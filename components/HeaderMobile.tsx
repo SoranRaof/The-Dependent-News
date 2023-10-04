@@ -1,10 +1,14 @@
+"use client";
 import Image from "next/image";
 import TheDependentLogo from "../public/The-Independent-Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavMobile from "./NavMobile";
-import FooterMobile from "./FooterMobile";
+import MenuNavMobile from "./MenuNavMobile";
+import { useState } from "react";
 
 const HeaderMobile = () => {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
   return (
     <div className="border-b border-solid border-gray-300 h-12 w-full justify-center bg-[#f7f7f7]">
       <div className="w-full h-full grid grid-cols-2">
@@ -17,18 +21,26 @@ const HeaderMobile = () => {
           />
         </div>
         <div className="col-span-1 grid grid-cols-3">
-          <div className="h-full w-full col-span-2 "></div>
+          <div className="h-full w-full col-span-2 pl-10 pr-3 py-3">
+            <div className="h-full w-full flex justify-center items-center overflow-hidden bg-[#337e81] rounded-md">
+              <p className="text-white text-[12px] text-center w-full">Login</p>
+            </div>
+          </div>
           <div className="h-full w-full border-l border-solid border-gray-300 col-span-1">
-            <div className="w-full flex justify-center pt-2 text-xs">
+            <div
+              className="w-full flex justify-center pt-2 text-xs"
+              onClick={() => setShowMenu(true)}
+            >
               <GiHamburgerMenu className="text-black text-[20px]" />
             </div>
-            <div className="w-full flex justify-center pt-1 text-[9px]">
+            <div className="w-full flex justify-center text-[9px]">
               <p className="text-black">Menu</p>
             </div>
           </div>
         </div>
       </div>
       <NavMobile />
+      {showMenu && <MenuNavMobile />}
     </div>
   );
 };
