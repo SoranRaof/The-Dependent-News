@@ -5,6 +5,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import NavMobile from "./NavMobile";
 import MenuNavMobile from "./MenuNavMobile";
 import { useState } from "react";
+import MainArticleCardMobile from "./MainCodingArticleCardMobile";
+import MainCodingArticleCardMobile from "./MainCodingArticleCardMobile";
 
 const HeaderMobile = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -41,6 +43,7 @@ const HeaderMobile = () => {
       </div>
       <NavMobile />
       {showMenu && <MenuNavMobile />}
+      <MainCodingArticleCardMobile />
     </div>
   );
 };

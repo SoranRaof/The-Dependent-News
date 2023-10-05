@@ -1,4 +1,4 @@
-import Image from "next/image";
+import MainArticleCardMobile from "@/components/MainCodingArticleCardMobile";
 
 export default function Home() {
   return <main></main>;

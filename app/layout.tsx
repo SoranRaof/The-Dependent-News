@@ -4,6 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import FooterMobile from "@/components/FooterMobile";
+import MainArticleCardMobile from "@/components/MainCodingArticleCardMobile";
 //import FooterMobile from "@/components/FooterMobile";
 // import { useMediaQuery } from "@mui/material";
 
