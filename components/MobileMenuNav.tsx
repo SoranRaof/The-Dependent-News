@@ -6,7 +6,7 @@ import TheIndependentCircle from "../public/The-Independent-Circle.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
-const MenuNavMobile = () => {
+const MobileMenuNav = () => {
   const [closeMenu, setCloseMenu] = useState(false);
 
   const handleMenuClose = () => {
@@ -14,7 +14,7 @@ const MenuNavMobile = () => {
   };
 
   return (
-    <div className="fixed top-0 right-0 h-full w-3/4 bg-white outline outline-gray-600">
+    <div className="fixed top-0 right-0 h-full w-3/4 bg-white outline outline-gray-600 z-10">
       <div className="grid grid-rows-6 w-full h-1/3">
         <div className="col-span-1 grid grid-cols-6 w-full h-12 border-b border-solid border-gray-300">
           <div className="h-full w-full col-span-5 flex items-center">
@@ -61,28 +61,34 @@ const MenuNavMobile = () => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-0 w-full">
+      <div className="fixed bottom-0 w-full px-4 py-4 border-t border-solid border-gray-300 bg-[#f7f7f7]">
         <div className="">
-          <Image
-            src={TheIndependentCircle}
-            alt="The Independent Circle Logo"
-            width="80"
-            height="80"
-          />
-          <div className="pt-5">
-            <p className="text-sm pb-2 font-extrabold">GET IN TOUCH</p>
-            <p className="text-sm">Contact us</p>
-          </div>
-          <div className="flex justify-left pt-4">
-            <div className="pr-3">
-              <a href="www.linkedin.com/in/soran-raof-3a142726b">
-                <FaLinkedin className="text-[30px] text-blue-500" />
-              </a>
+          <div className="grid grid-cols-3">
+            <div className="flex items-center justify-center">
+              <Image
+                src={TheIndependentCircle}
+                alt="The Independent Circle Logo"
+                width="80"
+                height="80"
+              />
             </div>
-            <div className="">
-              <a href="www.github.com/soranraof">
-                <FaGithubSquare className="text-[30px] text-black" />
-              </a>
+            <div>
+              <div className="pt-5">
+                <p className="text-sm pb-2 font-extrabold">GET IN TOUCH</p>
+                <p className="text-sm">Contact us</p>
+              </div>
+              <div className="flex justify-left pt-4">
+                <div className="pr-3">
+                  <a href="www.linkedin.com/in/soran-raof-3a142726b">
+                    <FaLinkedin className="text-[30px] text-blue-500" />
+                  </a>
+                </div>
+                <div className="">
+                  <a href="www.github.com/soranraof">
+                    <FaGithubSquare className="text-[30px] text-black" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -91,4 +97,4 @@ const MenuNavMobile = () => {
   );
 };
 
-export default MenuNavMobile;
+export default MobileMenuNav;

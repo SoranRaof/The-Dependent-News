@@ -2,13 +2,10 @@
 import Image from "next/image";
 import TheDependentLogo from "../public/The-Independent-Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import NavMobile from "./NavMobile";
-import MenuNavMobile from "./MenuNavMobile";
 import { useState } from "react";
-import MainArticleCardMobile from "./MainCodingArticleCardMobile";
-import MainCodingArticleCardMobile from "./MainCodingArticleCardMobile";
+import MobileMenuNav from "./MobileMenuNav";
 
-const HeaderMobile = () => {
+const MobileHeader = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   return (
@@ -41,11 +38,9 @@ const HeaderMobile = () => {
           </div>
         </div>
       </div>
-      <NavMobile />
-      {showMenu && <MenuNavMobile />}
-      <MainCodingArticleCardMobile />
+      {showMenu && <MobileMenuNav />}
     </div>
   );
 };
 
-export default HeaderMobile;
+export default MobileHeader;

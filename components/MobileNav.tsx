@@ -1,4 +1,4 @@
-const NavMobile = () => {
+const MobileNav = () => {
   return (
     <div className="border-b border-solid pt-[7px] border-gray-300 h-9 w-full flex justify-center items-center">
       <div className="w-full h-full grid grid-cols-4">
@@ -27,4 +27,4 @@ const NavMobile = () => {
   );
 };
 
-export default NavMobile;
+export default MobileNav;

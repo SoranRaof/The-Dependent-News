@@ -4,7 +4,7 @@ import TheIndependentCircle from "../public/The-Independent-Circle.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
-const FooterMobile = () => {
+const MobileFooter = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="mt-auto">
@@ -37,7 +37,7 @@ const FooterMobile = () => {
             <div className="col-span-1 h-full w-full flex justify-left">
               <div className="flex flex-col justify-left">
                 <p className="font-bold">TOPICS</p>
-                <a className="py-1.5 text-sm">News</a>
+                <a className="py-1.5 text-sm">ALL</a>
                 <a className="py-1.5 text-sm">Coding</a>
                 <a className="py-1.5 text-sm">Football</a>
                 <a className="py-1.5 text-sm">Cooking</a>
@@ -51,4 +51,4 @@ const FooterMobile = () => {
   );
 };
 
-export default FooterMobile;
+export default MobileFooter;
