@@ -1,4 +1,5 @@
 import MobileArticle from "@/components/MobileArticle";
+import MobileArticleComments from "@/components/MobileArticleComments";
 import MobileArticleNav from "@/components/MobileArticleNav";
 
 export default function ArticlePage() {
@@ -6,6 +7,7 @@ export default function ArticlePage() {
     <main>
       <MobileArticleNav />
       <MobileArticle />
+      <MobileArticleComments />
     </main>
   );
 }
