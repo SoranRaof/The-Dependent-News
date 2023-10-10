@@ -6,9 +6,9 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const MobileFooter = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="mt-auto">
-        <div className="border-t border-solid pt-5 border-gray-300 h-9 w-full flex justify-center items-center">
+    <div className="flex flex-col">
+      <div className="mt-5">
+        <div className="pt-5 border-t border-solid border-gray-300 h-9 w-full flex justify-center items-center">
           <div className="w-full h-full grid grid-cols-2 mx-6">
             <div className="flex-col col-span-1 h-full w-full flex justify-center">
               <Image

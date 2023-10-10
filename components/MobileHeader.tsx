@@ -20,9 +20,11 @@ const MobileHeader = () => {
           />
         </div>
         <div className="col-span-1 grid grid-cols-3">
-          <div className="h-full w-full col-span-2 pl-10 pr-3 py-3">
-            <div className="h-full w-full flex justify-center items-center overflow-hidden bg-[#337e81] rounded-md">
-              <p className="text-white text-[12px] text-center w-full">Login</p>
+          <div className="h-full w-full col-span-2 pl-10 pr-3 py-3 flex justify-end">
+            <div className="w-16 h-6 bg-[#337e81] rounded-md flex">
+              <button className="text-white text-[12px] text-center w-full">
+                Login
+              </button>
             </div>
           </div>
           <div className="h-full w-full border-l border-solid border-gray-300 col-span-1">

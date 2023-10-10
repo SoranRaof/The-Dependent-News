@@ -1,4 +1,5 @@
 import { IoIosArrowDown } from "react-icons/io";
+import { RiThumbUpFill, RiThumbDownFill } from "react-icons/ri";
 
 const MobileArticleComments = () => {
   return (
@@ -35,6 +36,37 @@ const MobileArticleComments = () => {
               <IoIosArrowDown />
             </div>
           </button>
+        </div>
+      </div>
+      <div className="grid grid-cols-3 w-full h-auto px-6 py-3 border-b border-solid border-gray-300 pb-4">
+        <div className="col-span-1 h-10 flex justify-center">0</div>
+        <div className="col-span-2">
+          <p>John Smith</p>
+          <p className="text-[#646464] text-[10px] pb-2">30 min ago</p>
+          <p className="text-[#646464] pb-2">
+            Object-relational mapping (ORM) is a way to align programming code
+            with database structures. ORM uses metadata descriptors to create a
+            layer between the programming language and a relational database.
+          </p>
+          <div className="grid grid-cols-4">
+            <div className="col-span-2">
+              <button className="text-[10px] bg-[#0074e8] text-white px-3 py-1 rounded-sm">
+                Reply
+              </button>
+            </div>
+            <div className="col-span-1 bg-gray-100 flex justify-center items-center w-auto">
+              <p className="px-1 text-[15px] text-[#646464]">4</p>
+              <button className="px-1 text-[18px] text-[#646464]">
+                <RiThumbUpFill />
+              </button>
+            </div>
+            <div className="col-span-1 bg-gray-100 flex justify-center items-center w-auto">
+              <p className="px-1 text-[15px] text-[#646464]">0</p>
+              <button className="px-1 text-[18px] text-[#646464]">
+                <RiThumbDownFill />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

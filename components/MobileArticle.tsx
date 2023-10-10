@@ -49,7 +49,7 @@ const MobileArticle = () => {
           </div>
         </div>
       </div>
-      <div className="h-50">
+      <div className="h-50 flex justify-center">
         <Image src={DonaldTrump} alt="Donald Trump" width="400" height="400" />
       </div>
       <div className="px-[8px] py-[6px] bg-[#f7f7f7] mb-3">
