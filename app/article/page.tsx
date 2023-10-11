@@ -5,9 +5,9 @@ import MobileArticleNav from "@/components/MobileArticleNav";
 export default function ArticlePage() {
   return (
     <main>
-      <MobileArticleNav />
+      {/* <MobileArticleNav />
       <MobileArticle />
-      <MobileArticleComments />
+      <MobileArticleComments /> */}
     </main>
   );
 }

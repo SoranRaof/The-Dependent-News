@@ -1,10 +1,14 @@
-//import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+
+import Header from "@/components/Header";
+import Nav from "@/components/Nav";
+import MobileHeader from "@/components/MobileHeader";
 import MobileNav from "@/components/MobileNav";
 import MobileFooter from "@/components/MobileFooter";
-import MobileHeader from "@/components/MobileHeader";
+import Banner from "@/components/Banner";
+
 // import { useMediaQuery } from "@mui/material";
 
 const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] });
@@ -22,10 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={openSans.className}>
-        <MobileHeader />
-        <MobileNav />
+        <Banner />
+        <Header />
+        <Nav />
+        {/* <MobileHeader />
+        <MobileNav /> */}
         {children}
-        <MobileFooter />
+        {/* <MobileFooter /> */}
       </body>
     </html>
   );

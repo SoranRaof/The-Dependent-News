@@ -5,7 +5,14 @@ const MobileBigArticleCard = () => {
   return (
     <div className="w-full h-full pt-3 px-3 justify-center">
       <div className="w-fit h-fit relative">
-        <Image src={DonaldTrump} alt="Donald Trump" width="400" height="400" />
+        <div style={{ position: "relative", height: "auto" }}>
+          <Image
+            src={DonaldTrump}
+            alt="Donald Trump"
+            sizes="100vw"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <p className="text-[12px] absolute z-1 text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
           CODING
         </p>

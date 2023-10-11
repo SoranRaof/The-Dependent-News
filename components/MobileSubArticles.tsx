@@ -1,6 +1,3 @@
-import Image from "next/image";
-import DonaldTrump from "../public/DonaldTrump.jpeg";
-
 const MobileSubArticles = () => {
   return (
     <div className="mt-3 px-3 ">

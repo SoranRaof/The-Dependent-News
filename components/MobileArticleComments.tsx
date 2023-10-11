@@ -39,7 +39,7 @@ const MobileArticleComments = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 w-full h-auto px-6 py-3 border-b border-solid border-gray-300 pb-4">
-        <div className="col-span-1 h-10 flex justify-center">0</div>
+        <div className="col-span-1 h-10 flex justify-center">Picture</div>
         <div className="col-span-2">
           <p>John Smith</p>
           <p className="text-[#646464] text-[10px] pb-2">30 min ago</p>
@@ -50,7 +50,7 @@ const MobileArticleComments = () => {
           </p>
           <div className="grid grid-cols-4">
             <div className="col-span-2">
-              <button className="text-[10px] bg-[#0074e8] text-white px-3 py-1 rounded-sm">
+              <button className="text-[15px] text-[#646464] text-decoration-line: underline">
                 Reply
               </button>
             </div>
