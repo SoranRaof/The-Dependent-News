@@ -4,10 +4,12 @@ import { Open_Sans } from "next/font/google";
 
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
+import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
+
 import MobileHeader from "@/components/MobileHeader";
 import MobileNav from "@/components/MobileNav";
 import MobileFooter from "@/components/MobileFooter";
-import Banner from "@/components/Banner";
 
 // import { useMediaQuery } from "@mui/material";
 
@@ -33,6 +35,7 @@ export default function RootLayout({
         <MobileNav /> */}
         {children}
         {/* <MobileFooter /> */}
+        <Footer />
       </body>
     </html>
   );

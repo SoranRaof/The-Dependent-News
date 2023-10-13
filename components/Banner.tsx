@@ -3,7 +3,7 @@ import { BiSolidUserCircle } from "react-icons/bi";
 
 const Banner = () => {
   return (
-    <div className="border-b border-solid border-gray-300 px-6 w-full flex justify-center items-center bg-[#f7f7f7]">
+    <div className="border-b border-solid border-gray-300 px-6 w-full h-full flex justify-center items-center bg-[#f7f7f7]">
       <div className="w-11/12 h-full">
         <div className="w-full h-full grid grid-cols-2">
           <div className="col-span-1 h-full w-full">

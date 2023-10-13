@@ -4,7 +4,7 @@ import TheDependentLogo from "../public/The-Independent-Logo.png";
 
 const Header = () => {
   return (
-    <div className="border-b border-solid border-gray-300 px-6 w-full flex justify-center items-center bg-[#f7f7f7]">
+    <div className="border-b border-solid border-gray-300 px-6 w-full h-full flex justify-center items-center bg-[#f7f7f7]">
       <div className="w-11/12 h-full">
         <div className="h-20 grid grid-cols-2 justify-start items-center">
           <div className="col-span-1 h-full w-full flex items-center justify-start ">

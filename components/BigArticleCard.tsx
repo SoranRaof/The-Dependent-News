@@ -4,8 +4,8 @@ import DonaldTrump from "../public/DonaldTrump.jpeg";
 
 const BigArticleCard = () => {
   return (
-    <div className="mx-[350px] mb-44">
-      <div className="grid-cols-1">
+    <div className="mx-72 mb-28">
+      <div className="flex-cols-1">
         <div className="col-span-1 h-52 w-full"></div>
       </div>
       <div className="grid grid-cols-2 h-52 w-full">

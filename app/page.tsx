@@ -4,18 +4,14 @@ import MobileArticleCluster from "@/components/MobileArticleCluster";
 
 import BigArticleCard from "@/components/BigArticleCard";
 import ArticleCluster from "@/components/ArticleCluster";
+import MediumArticleCard from "@/components/MediumArticleCard";
 
 export default function Home() {
   return (
     <main>
-      {/* <MobileBigArticleCard />
-      <MobileBigArticleCard />
-      <MobileSubArticles />
-      <MobileSubArticles />
-      <MobileArticleCluster /> */}
       <BigArticleCard />
-
       <ArticleCluster />
+      <MediumArticleCard />
     </main>
   );
 }
