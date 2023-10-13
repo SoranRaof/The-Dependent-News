@@ -1,24 +1,12 @@
 import Image from "next/image";
 import { FaChevronCircleRight } from "react-icons/fa";
 import DonaldTrump from "../public/DonaldTrump.jpeg";
-import DependentCircle from "../public/The-Independent-Circle.png";
 
 const MediumArticleCard = () => {
   return (
-    <div className="mx-72 mb-28">
-      <div className="flex flex-row items-center h-16">
-        <div className="pr-2">
-          <Image
-            src={DependentCircle}
-            alt="The Independent Circle"
-            width={35}
-            height={35}
-          />
-        </div>
-        <p className="text-2xl pt-1">News</p>
-      </div>
-      <div className="grid grid-cols-3 gap-4 h-1/2 w-full">
-        <div className="col-span-2 grid grid-rows-2 h-4/5 w-full relative">
+    <div className="mx-72 mb-6">
+      <div className="grid grid-cols-3 gap-4 h-full w-full">
+        <div className="col-span-2 grid grid-rows-2 h-full w-full relative">
           <div
             className="col-span-1"
             style={{ position: "relative", height: "auto" }}
@@ -66,7 +54,7 @@ const MediumArticleCard = () => {
           </div>
         </div>
         <div className="col-span-1">
-          <div className="grid grid-rows-4 gap-2 h-4/5">
+          <div className="grid grid-rows-4 gap-2 h-full">
             <div className="row-span-2 grid grid-rows-2 h-full w-full relative">
               <div
                 className="row-span-1"
@@ -94,7 +82,7 @@ const MediumArticleCard = () => {
                   <div className="text-sm">
                     <ul className="ml-1 border-l border-solid border-white pl-2">
                       <li className="flex justify-start">
-                        <FaChevronCircleRight className="text-[#ec1a2e] mr-2 text-[20px]" />
+                        <FaChevronCircleRight className="text-[#ec1a2e] mr-2 text-[16px]" />
                         <p>Independent TV: Bel Trew reports from Gaza border</p>
                       </li>
                     </ul>

@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="flex flex-col">
       <div className="mt-5">
         <div className="pt-5 border-t border-solid border-gray-300 h-9 w-full flex justify-center items-center">
-          <div className="w-full h-full grid grid-cols-2 mx-6 pl-10">
+          <div className="w-full h-full grid grid-cols-2 mx-10">
             <div className="flex-col col-span-1 h-full w-full flex justify-center">
               <Image
                 src={TheIndependentCircle}
@@ -34,14 +34,24 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-1 h-full w-full flex justify-left">
+            <div className="col-span-1 h-full w-full flex justify-end">
               <div className="flex flex-col justify-left">
-                <p className="font-bold">TOPICS</p>
-                <a className="py-1.5 text-xs">ALL</a>
-                <a className="py-1.5 text-xs">Coding</a>
-                <a className="py-1.5 text-xs">Football</a>
-                <a className="py-1.5 text-xs">Cooking</a>
-                <a className="py-1.5 text-xs">Portfolio</a>
+                <p className="font-bold text-md text-[#ec1a2e]">TOPICS</p>
+                <a className="py-1.5 text-sm border-b-4 border-transparent hover:border-[#ec1a2e] cursor-pointer">
+                  All
+                </a>
+                <a className="py-1.5 text-sm border-b-4 border-transparent hover:border-[#ec1a2e] cursor-pointer">
+                  Coding
+                </a>
+                <a className="py-1.5 text-sm border-b-4 border-transparent hover:border-[#ec1a2e] cursor-pointer">
+                  Football
+                </a>
+                <a className="py-1.5 text-sm border-b-4 border-transparent hover:border-[#ec1a2e] cursor-pointer">
+                  Cooking
+                </a>
+                <a className="py-1.5 text-sm border-b-4 border-transparent hover:border-[#ec1a2e] cursor-pointer">
+                  Portfolio
+                </a>
               </div>
             </div>
           </div>

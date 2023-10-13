@@ -1,12 +1,24 @@
 import Image from "next/image";
 import { FaChevronCircleRight } from "react-icons/fa";
 import DonaldTrump from "../public/DonaldTrump.jpeg";
+import DependentCircle from "../public/The-Independent-Circle.png";
 
-const BigArticleCard = () => {
+const MainArticleCard = () => {
   return (
     <div className="mx-72 mb-28">
       <div className="flex-cols-1">
-        <div className="col-span-1 h-52 w-full"></div>
+        <div className="col-span-1 h-10 w-full"></div>
+      </div>
+      <div className="flex flex-row items-center h-16">
+        <div className="pr-2">
+          <Image
+            src={DependentCircle}
+            alt="The Independent Circle"
+            width={35}
+            height={35}
+          />
+        </div>
+        <p className="text-2xl pt-1">News</p>
       </div>
       <div className="grid grid-cols-2 h-52 w-full">
         <div className="col-span-1 bg-[#222222] w-full h-full relative">
@@ -61,4 +73,4 @@ const BigArticleCard = () => {
   );
 };
 
-export default BigArticleCard;
+export default MainArticleCard;
