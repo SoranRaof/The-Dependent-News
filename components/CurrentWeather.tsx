@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import getWeatherFromLatitudeAndLongitude from "@/pages/api/weather/weather";
+import getWeatherFromLatitudeAndLongitude from "@/utils/weather/weather";
 
 interface WeatherData {
   current_weather: {

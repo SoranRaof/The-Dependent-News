@@ -78,6 +78,52 @@ const Article = () => {
           cameras being stolen and 595 damaged. The news comes after London
           Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
           August, to cover all London boroughs in a bid to help clear pollution
+          in the capital. The Metropolitan Police have reported 795 incidents of
+          ULEZ-related crimes in the last six months with hundreds of cameras
+          across London being damaged or stolen. Updated figures from the Met
+          include 200 cameras being stolen and 595 damaged. The news comes after
+          London Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
+          in the capital. The Metropolitan Police have reported 795 incidents of
+          ULEZ-related crimes in the last six months with hundreds of cameras
+          across London being damaged or stolen. Updated figures from the Met
+          include 200 cameras being stolen and 595 damaged. The news comes after
+          London Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
+          in the capital. The Metropolitan Police have reported 795 incidents of
+          ULEZ-related crimes in the last six months with hundreds of cameras
+          across London being damaged or stolen. Updated figures from the Met
+          include 200 cameras being stolen and 595 damaged. The news comes after
+          London Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
+          in the capital.
+        </p>
+        <br></br>
+        <p>
+          The Metropolitan Police have reported 795 incidents of ULEZ-related
+          crimes in the last six months with hundreds of cameras across London
+          being damaged or stolen. Updated figures from the Met include 200
+          cameras being stolen and 595 damaged. The news comes after London
+          Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
+          in the capital. The Metropolitan Police have reported 795 incidents of
+          ULEZ-related crimes in the last six months with hundreds of cameras
+          across London being damaged or stolen. Updated figures from the Met
+          include 200 cameras being stolen and 595 damaged. The news comes after
+          London Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
+          in the capital. The Metropolitan Police have reported 795 incidents of
+          ULEZ-related crimes in the last six months with hundreds of cameras
+          across London being damaged or stolen. Updated figures from the Met
+          include 200 cameras being stolen and 595 damaged. The news comes after
+          London Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
+          in the capital. The Metropolitan Police have reported 795 incidents of
+          ULEZ-related crimes in the last six months with hundreds of cameras
+          across London being damaged or stolen. Updated figures from the Met
+          include 200 cameras being stolen and 595 damaged. The news comes after
+          London Mayor Sadiq Khan expanded the Ultra Low Emission Zone (ULEZ) in
+          August, to cover all London boroughs in a bid to help clear pollution
           in the capital.
         </p>
       </div>

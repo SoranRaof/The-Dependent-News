@@ -1,29 +1,23 @@
-import Image from "next/image";
-import DonaldTrump from "../public/DonaldTrump.jpeg";
-const SingleArticleCard = () => {
+const SingleArticleCard = ({ article }) => {
+  if (!article) {
+    return <div>loading...</div>;
+  }
+
   return (
-    <div className="h-full grid grid-rows-5 border border-gray-300">
-      <div
-        className="row-span-3"
-        style={{ position: "relative", height: "auto" }}
-      >
-        <Image
-          src={DonaldTrump}
-          alt="Donald Trump"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover" }}
+    <div className="h-96 grid grid-rows-5 border border-gray-300">
+      <div className="row-span-3">
+        <img
+          className="object-contain w-full h-auto"
+          src={article.article_img_url}
+          alt={article.title}
         />
       </div>
-      <div className="row-span-2 grid grid-row-2 px-4 py-4 overflow-hidden">
+      <div className="row-span-2 grid grid-row-4 px-2 py-2 overflow-hidden">
         <div className="row-span-1 inline-block">
-          <p className="text-[#ec1a2e] text-xs">TITLE</p>
+          <p className="text-[#ec1a2e] text-md">{article.title}</p>
         </div>
-        <div className="flex text-sm">
-          <p className="break-words">
-            Joanna Simpson: Family fear for lives as they call for
-            ‘narcissistic’ hammer killer to be kept behind bars
-          </p>
+        <div className="flex text-sm pt-1">
+          <p className="break-words">{article.body.slice(0, 100) + "..."}</p>
         </div>
       </div>
     </div>

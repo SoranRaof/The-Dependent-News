@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="mt-5">
         <div className="pt-5 border-t border-solid border-gray-300 h-9 w-full flex justify-center items-center">
           <div className="w-full h-full grid grid-cols-2 mx-10">
-            <div className="flex-col col-span-1 h-full w-full flex justify-center">
+            <div className="col-span-1 h-full w-full">
               <Image
                 src={TheIndependentCircle}
                 alt="The Independent Circle Logo"
