@@ -16,6 +16,7 @@ export default function Home() {
   useEffect(() => {
     const getArticles = async () => {
       const articlesArr = await fetchAllArticles();
+      console.log(articlesArr);
       setArticles(articlesArr);
     };
     getArticles();
@@ -25,10 +26,21 @@ export default function Home() {
 
   return (
     <main>
-      <MainArticleCard article={articles[0]} />
-      <ArticleCluster article={articles.slice(3)} />
+      <div className="grid grid-rows-2 gap-2">
+        <div>
+          <MainArticleCard article={articles[0]} />
+        </div>
+        <div>
+          <ArticleCluster article={articles.slice(3)} />
+        </div>
+      </div>
+
       <MediumArticleCard article={articles.slice(13)[0]} />
       <ArticleCluster article={articles.slice(10)} />
+
+      {/* <MobileBigArticleCard />
+      <MobileSubArticles />
+      <MobileArticleCluster /> */}
     </main>
   );
 }

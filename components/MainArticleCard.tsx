@@ -2,14 +2,30 @@ import Image from "next/image";
 import { FaChevronCircleRight } from "react-icons/fa";
 import DependentCircle from "../public/The-Independent-Circle.png";
 
-const MainArticleCard = ({ article }) => {
+export interface Article {
+  article_id: number;
+  article_img_url: string;
+  author: string;
+  body: string;
+  comment_count: number;
+  created_at: string;
+  title: string;
+  topic: string;
+  votes: number;
+}
+
+interface MainArticleCardProps {
+  article: Article;
+}
+
+const MainArticleCard = ({ article }: MainArticleCardProps) => {
   if (!article) {
-    return <div>loading...</div>; // Or display a loading message or a default card
+    return <div>loading...</div>;
   }
 
   return (
-    <div className="mx-72 mb-64">
-      <div className="flex-cols-1">
+    <div className="mx-auto max-w-5xl p-4 xl:p-12 h-auto">
+      <div className="">
         <div className="col-span-1 h-10 w-full"></div>
       </div>
       <div className="flex flex-row items-center h-16">
@@ -21,12 +37,15 @@ const MainArticleCard = ({ article }) => {
             height={35}
           />
         </div>
-        <p className="text-2xl pt-1">News</p>
+        <p className="text-2xl pt-1">
+          {article.topic.slice(0, 1).toLocaleUpperCase() +
+            article.topic.slice(1)}
+        </p>
       </div>
-      <div className="grid grid-cols-2 h-52 w-full">
+      <div className="grid grid-cols-2 h-full w-full">
         <div className="col-span-1 bg-[#222222] w-full h-full relative">
-          <div>
-            <p className="text-[12px] absolute z-1 text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
+          <div className="inline-block bg-red-500">
+            <p className="text-[12px] text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
               {article.topic.toUpperCase()}
             </p>
           </div>
@@ -54,7 +73,7 @@ const MainArticleCard = ({ article }) => {
         </div>
         <div>
           <img
-            className="object-contain w-full h-auto"
+            className="object-cover w-full h-auto"
             src={article.article_img_url}
             alt={article.title}
           />

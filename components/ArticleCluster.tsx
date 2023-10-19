@@ -1,6 +1,12 @@
 import SingleArticleCard from "./SingleArticleCard";
 
-const ArticleCluster = ({ article }) => {
+interface ArticleClusterProps {
+  article: {
+    [key: string]: any;
+  };
+}
+
+const ArticleCluster = ({ article }: ArticleClusterProps) => {
   if (!article) {
     return <div>loading...</div>; // Or display a loading message or a default card
   }
