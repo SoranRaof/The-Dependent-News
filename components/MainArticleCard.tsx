@@ -20,11 +20,11 @@ interface MainArticleCardProps {
 
 const MainArticleCard = ({ article }: MainArticleCardProps) => {
   if (!article) {
-    return <div>loading...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
-    <div className="mx-auto max-w-5xl p-4 xl:p-12 h-auto">
+    <div className="mx-auto h-auto">
       <div className="">
         <div className="col-span-1 h-10 w-full"></div>
       </div>
@@ -42,7 +42,7 @@ const MainArticleCard = ({ article }: MainArticleCardProps) => {
             article.topic.slice(1)}
         </p>
       </div>
-      <div className="grid grid-cols-2 h-full w-full">
+      <div className="grid grid-cols-2 h-full w-full relative">
         <div className="col-span-1 bg-[#222222] w-full h-full relative">
           <div className="inline-block bg-red-500">
             <p className="text-[12px] text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
@@ -57,21 +57,21 @@ const MainArticleCard = ({ article }: MainArticleCardProps) => {
               <ul className="ml-1 border-l border-solid border-white pl-3">
                 <li className="flex items-center mb-1">
                   <FaChevronCircleRight className="text-[#ec1a2e] mr-2" />
-                  <p>{}</p>
+                  <p>{article.body.slice(0, 10)}</p>
                 </li>
                 <li className="flex items-center mb-1">
                   <FaChevronCircleRight className="text-[#ec1a2e] mr-2" />
-                  <p>{}</p>
+                  <p>{article.body.slice(0, 10)}</p>
                 </li>
                 <li className="flex items-center mb-1">
                   <FaChevronCircleRight className="text-[#ec1a2e] mr-2" />
-                  <p>{}</p>
+                  <p>{article.body.slice(0, 10)}</p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-full h-full relative">
           <img
             className="object-cover w-full h-auto"
             src={article.article_img_url}

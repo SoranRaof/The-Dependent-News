@@ -27,9 +27,9 @@ export default function Home() {
 
   return (
     <main>
-      <div className="flex flex-col h-full w-full gap-y-2">
+      <div className="flex flex-col h-full w-full gap-y-4">
         <MobileBigArticleCard article={articles[0]} />
-        {/* <MobileSubArticles /> */}
+        <MobileSubArticles />
         <MobileArticleCluster articles={articles} />
         {/* <div className="w-full h-32 col-span-1 outline outline-red-500 px-2"></div>
         <div className="w-full h-32 col-span-1 outline outline-red-500 px-2"></div>

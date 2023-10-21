@@ -40,13 +40,12 @@ const MobileBigArticleCard = ({ article }: Props) => {
               article.topic.slice(1)}
           </p>
         </div>
-        <div className="w-fit h-fit relative">
-          <div style={{ position: "relative", height: "auto" }}>
+        <div className="w-full h-fit relative">
+          <div>
             <img
+              className="object-cover w-full h-auto"
               src={article.article_img_url}
-              alt="Donald Trump"
-              sizes="100vw"
-              style={{ objectFit: "cover" }}
+              alt={article.title}
             />
           </div>
           <p className="text-[12px] absolute z-1 text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
@@ -54,7 +53,7 @@ const MobileBigArticleCard = ({ article }: Props) => {
           </p>
         </div>
         <div className="bg-[#222222]">
-          <div className="w-full h-full py-2 px-2">
+          <div className="w-full h-full p-2">
             <p className="text-white">{article.title}</p>
           </div>
           <div className="text-sm bg-[#222222] py-2 ">
