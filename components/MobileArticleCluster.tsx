@@ -1,7 +1,7 @@
 import MobileSingleCard from "./MobileSingleCard";
 
 interface MobileArticleClusterProps {
-  articles: any[]; // replace 'any' with the type of your articles array
+  articles: any[];
 }
 
 const MobileArticleCluster = ({ articles }: MobileArticleClusterProps) => {

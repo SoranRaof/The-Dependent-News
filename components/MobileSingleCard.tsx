@@ -23,7 +23,9 @@ const MobileSingleCard: React.FC<Props> = ({ article }) => {
         {article.author && article.title && (
           <div className="flex flex-col gap-y-1 row-span-3 p-3">
             <p className="text-sm font-bold text-red-500">{article.author}</p>
-            <p className="text-sm text-black">{article.title}</p>
+            <p className="text-md font-bold text-black overflow-hidden">
+              {article.title}
+            </p>
           </div>
         )}
         {!article.author ||

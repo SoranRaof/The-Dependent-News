@@ -9,7 +9,6 @@ import MobileArticleCluster from "@/components/MobileArticleCluster";
 import ArticleCluster from "@/components/ArticleCluster";
 import MediumArticleCard from "@/components/MediumArticleCard";
 import MainArticleCard from "@/components/MainArticleCard";
-import Card from "@/components/card";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);
@@ -29,7 +28,7 @@ export default function Home() {
     <main>
       <div className="flex flex-col h-full w-full gap-y-4">
         <MobileBigArticleCard article={articles[0]} />
-        <MobileSubArticles />
+        <MobileSubArticles article={articles[0]} />
         <MobileArticleCluster articles={articles} />
         {/* <div className="w-full h-32 col-span-1 outline outline-red-500 px-2"></div>
         <div className="w-full h-32 col-span-1 outline outline-red-500 px-2"></div>
