@@ -1,12 +1,16 @@
 import MobileSingleCard from "./MobileSingleCard";
 
-const MobileArticleCluster = () => {
+interface MobileArticleClusterProps {
+  articles: any[]; // replace 'any' with the type of your articles array
+}
+
+const MobileArticleCluster = ({ articles }: MobileArticleClusterProps) => {
   return (
-    <div className="grid grid-cols-2 h-auto gap-4">
-      <MobileSingleCard />
-      <MobileSingleCard />
-      <MobileSingleCard />
-      <MobileSingleCard />
+    <div className="xl:grid-cols-4 grid grid-cols-2 h-auto gap-3 px-3">
+      <MobileSingleCard article={articles[1]} />
+      <MobileSingleCard article={articles[2]} />
+      <MobileSingleCard article={articles[3]} />
+      <MobileSingleCard article={articles[4]} />
     </div>
   );
 };

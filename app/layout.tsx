@@ -11,8 +11,6 @@ import MobileHeader from "@/components/MobileHeader";
 import MobileNav from "@/components/MobileNav";
 import MobileFooter from "@/components/MobileFooter";
 
-// import { useMediaQuery } from "@mui/material";
-
 const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
@@ -27,15 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
-        <Banner />
-        <Header />
-        <Nav />
-        {/* <MobileHeader />
-        <MobileNav /> */}
-        {children}
-        {/* <MobileFooter /> */}
-        <Footer />
+      <body>
+        <MobileHeader />
+        <MobileNav />
+        <div className={`md:mx-20 xl:mx-96 font-sans`}>{children}</div>
       </body>
     </html>
   );
