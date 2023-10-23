@@ -18,19 +18,17 @@ const MediumArticleCard = ({ article }: MediumArticleCardProps) => {
   }
 
   return (
-    <div className="mx-72 mb-32 h-auto">
-      <div className="grid grid-cols-3 gap-4 h-auto">
+    <div className="h-full w-full">
+      <div className="grid grid-cols-3 gap-1 h-full">
         <div className="col-span-2 grid grid-rows-2 relative h-full">
-          <div
-            className="col-span-1"
-            style={{ position: "relative", height: "auto" }}
-          >
-            <img
-              src={article.article_img_url}
-              alt={article.title}
-              sizes="100vw"
-              className="object-cover w-auto h-auto"
-            />
+          <div className="col-span-1">
+            <div className="w-full h-full relative">
+              <img
+                className="object-cover w-full h-full"
+                src={article.article_img_url}
+                alt={article.title}
+              />
+            </div>
             <p className="text-[12px] absolute z-0 text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
               {article.topic.toUpperCase()}
             </p>
@@ -64,18 +62,16 @@ const MediumArticleCard = ({ article }: MediumArticleCardProps) => {
           </div>
         </div>
         <div className="col-span-1 h-full">
-          <div className="grid grid-rows-4 gap-2 h-full">
+          <div className="grid grid-rows-4 gap-1 h-full">
             <div className="row-span-2 grid grid-rows-2 h-full w-full relative">
-              <div
-                className="row-span-1"
-                style={{ position: "relative", height: "auto" }}
-              >
-                <img
-                  src={article.article_img_url}
-                  alt={article.title}
-                  sizes="100vw"
-                  style={{ objectFit: "cover" }}
-                />
+              <div className="row-span-1">
+                <div className="w-full h-full relative">
+                  <img
+                    className="object-cover w-full h-full"
+                    src={article.article_img_url}
+                    alt={article.title}
+                  />
+                </div>
                 <p className="text-[12px] absolute z-1 text-white border-b border-[#ec1a2e] bg-[#ec1a2e] px-2 py-1 top-0 left-0">
                   {article.topic.toUpperCase()}
                 </p>

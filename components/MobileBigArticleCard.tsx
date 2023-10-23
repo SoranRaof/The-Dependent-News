@@ -52,23 +52,29 @@ const MobileBigArticleCard = ({ article }: Props) => {
             CODING
           </p>
         </div>
-        <div className="bg-[#222222]">
+        <div className="bg-[#222222] h-full w-full">
           <div className="w-full h-full p-2">
-            <p className="text-white">{article.title}</p>
+            <p className="text-white font-extrabold">{article.title}</p>
           </div>
-          <div className="text-sm bg-[#222222] py-2 ">
+          <div className="text-sm bg-[#222222] py-2">
             <ul className="ml-1 border-l border-solid border-white pl-2">
               <li className="flex items-center mb-1">
                 <FaChevronCircleRight className="text-[#ec1a2e] mr-2" />
-                <p className="text-white">{article.body.slice(0, 10)}</p>
+                <p className="text-white font-bold">
+                  {article.body.slice(0, 10)}
+                </p>
               </li>
               <li className="flex items-center mb-1">
                 <FaChevronCircleRight className="text-[#ec1a2e] mr-2" />
-                <p className="text-white">{article.body.slice(0, 10)}</p>
+                <p className="text-white font-bold">
+                  {article.body.slice(0, 10)}
+                </p>
               </li>
               <li className="flex items-center mb-1">
                 <FaChevronCircleRight className="text-[#ec1a2e] mr-2" />
-                <p className="text-white">{article.body.slice(0, 10)}</p>
+                <p className="text-white font-bold">
+                  {article.body.slice(0, 10)}
+                </p>
               </li>
             </ul>
           </div>

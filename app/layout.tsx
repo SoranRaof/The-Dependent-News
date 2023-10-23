@@ -28,7 +28,8 @@ export default function RootLayout({
       <body>
         <MobileHeader />
         <MobileNav />
-        <div className={`md:mx-20 xl:mx-96 font-sans`}>{children}</div>
+        <div className={`md:mx-20 lg:mx-48 xl:mx-56 font-sans`}>{children}</div>
+        <MobileFooter />
       </body>
     </html>
   );

@@ -24,7 +24,7 @@ const MainArticleCard = ({ article }: MainArticleCardProps) => {
   }
 
   return (
-    <div className="mx-auto h-auto">
+    <div className="h-auto">
       <div className="">
         <div className="col-span-1 h-10 w-full"></div>
       </div>
@@ -49,7 +49,7 @@ const MainArticleCard = ({ article }: MainArticleCardProps) => {
               {article.topic.toUpperCase()}
             </p>
           </div>
-          <div className="grid grid-rows-2 gap-2 px-5 py-10 text-white">
+          <div className="grid grid-rows-2 px-5 py-10 text-white h-full">
             <div className="text-3xl">
               <p>{article.title}</p>
             </div>
@@ -73,7 +73,7 @@ const MainArticleCard = ({ article }: MainArticleCardProps) => {
         </div>
         <div className="w-full h-full relative">
           <img
-            className="object-cover w-full h-auto"
+            className="object-cover w-full h-full"
             src={article.article_img_url}
             alt={article.title}
           />

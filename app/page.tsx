@@ -9,6 +9,7 @@ import MobileArticleCluster from "@/components/MobileArticleCluster";
 import ArticleCluster from "@/components/ArticleCluster";
 import MediumArticleCard from "@/components/MediumArticleCard";
 import MainArticleCard from "@/components/MainArticleCard";
+import SingleArticleCard from "@/components/SingleArticleCard";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);

@@ -6,7 +6,7 @@ interface MobileArticleClusterProps {
 
 const MobileArticleCluster = ({ articles }: MobileArticleClusterProps) => {
   return (
-    <div className="xl:grid-cols-4 grid grid-cols-2 h-auto gap-3 px-3">
+    <div className="md:grid-cols-4 w-full grid grid-cols-2 h-auto gap-3 px-3">
       <MobileSingleCard article={articles[1]} />
       <MobileSingleCard article={articles[2]} />
       <MobileSingleCard article={articles[3]} />
