@@ -1,4 +1,3 @@
-import { useMediaQuery } from "@mui/material";
 import MediumArticleCard from "./MediumArticleCard";
 
 export interface Article {
@@ -11,9 +10,7 @@ interface MobileSubArticlesProps {
 }
 
 const MobileSubArticles = ({ article }: MobileSubArticlesProps) => {
-  const isCondensed = useMediaQuery("(max-width: 770px)");
-
-  if (article && isCondensed) {
+  if (article) {
     return (
       <div className="grid gap-y-1 grid-rows-3">
         <div className="px-3 ">
@@ -48,8 +45,6 @@ const MobileSubArticles = ({ article }: MobileSubArticlesProps) => {
         </div>
       </div>
     );
-  } else if (article && !isCondensed) {
-    return <MediumArticleCard article={article} />;
   } else {
     return <p>Loading...</p>;
   }

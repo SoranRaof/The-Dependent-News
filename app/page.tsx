@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { fetchAllArticles } from "@/utils/news/news-api";
+import { useMediaQuery } from "@mui/material";
 
 import MobileSubArticles from "@/components/MobileSubArticles";
 import MobileBigArticleCard from "@/components/MobileBigArticleCard";
@@ -25,11 +26,18 @@ export default function Home() {
 
   console.log(articles);
 
+  const isCondensed = useMediaQuery("(max-width: 770px)");
+
   return (
     <main>
       <div className="flex flex-col h-full w-full gap-y-4">
         <MobileBigArticleCard article={articles[0]} />
-        <MobileSubArticles article={articles[0]} />
+        {isCondensed ? (
+          <MobileSubArticles article={articles[0]} />
+        ) : (
+          <MediumArticleCard article={articles[0]} />
+        )}
+
         <MobileArticleCluster articles={articles} />
         {/* <div className="w-full h-32 col-span-1 outline outline-red-500 px-2"></div>
         <div className="w-full h-32 col-span-1 outline outline-red-500 px-2"></div>

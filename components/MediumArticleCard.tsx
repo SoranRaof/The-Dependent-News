@@ -18,7 +18,7 @@ const MediumArticleCard = ({ article }: MediumArticleCardProps) => {
   }
 
   return (
-    <div className="h-full w-full">
+    <div className="flex h-full w-full">
       <div className="grid grid-cols-3 gap-1 h-full">
         <div className="col-span-2 grid grid-rows-2 relative h-full">
           <div className="col-span-1">
